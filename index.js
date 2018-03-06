@@ -1,6 +1,15 @@
-function takeANumber(line, name){
+/*function takeANumber(line, name){
  line.push(name)
  return `Welcome, ${name}. You are number ${line.length} in line.`
+}
+*/
+
+var inLine = 0
+
+function takeANumber(line, name){
+  inLine++
+  line.push(inLine)
+  return `Welcome ${name}. You are today's customer number ${inLine}.`
 }
 
 function nowServing(line){
